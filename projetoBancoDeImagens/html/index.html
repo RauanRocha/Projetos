@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> VisoN </title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <div class="backModal backModalImg">
+        <div class="modal modalImg">
+            <p class="closeX"><span class="closeImgModal">x</span></p>
+            <div class="headerModalImg">
+                <div class="autorInfo">
+                    <img src="../img/perfilIcon.png" alt="" id="autorIcon">
+                    <p>Nome Fotografo</p>
+                </div>
+                <div class="navModalImg">
+                    <img src="../img/savedBlack.png" alt="" class="navModalIcon saveItem">
+                    <button class="downloadButton" id="modalDownload">Baixar</button>
+                </div>
+            </div>
+            <h3 id="modalImgDesc">Descrição muito legal da imagem</h3>
+            <img src="../img/wallpaper02.jpg" alt="" id="modalMainImg">
+        </div>
+    </div>
+
+    <div class="backModal backModalSave">
+        <div class="modal modalSave">
+            <div class="saveColection">
+                <p class="closeX"><span id="closeSaveColec">x</span></p>
+
+                <div class="saveText">
+                    <h2>Salvar</h2>
+                    <h3>Suas Coleções</h3>
+                </div>
+
+                <div class="colecOptions">
+
+                </div>
+
+                <div class="noColec">
+                    <p>Você ainda não possui nenhuma coleção, <a href="colectionPage.html">vamos criar ?</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <header id="mHeader">
+        <div class="headHeader">
+            <div id="logoDiv">
+                <img src="../img/logo.png" alt="Logo" id="logo">
+                <p>VisioN</p>
+            </div>
+
+            <div class="searchArea invisible" id="searchHead">
+                <input type="text" name="" class="search" id="inputH" placeholder="Buscar fotos...">
+                <img src="../img/lupa.png" alt="Pesquisar"  class="iconPesquisa">
+            </div>
+
+            <div id="navHeader">
+                <a href="colectionPage.html"><img src="../img/saved.png" alt=""></a>
+            </div>
+        </div>
+        <div class="mainHeader">
+            <h1>Descubra a imagem perfeita para dar vida às suas ideias, milhões de fotos aguardam por você</h1>
+            <div class="searchArea">
+                <input type="text" name="" class="search sActive" id="inputM" placeholder="Buscar fotos...">
+                <img src="../img/lupa.png" alt="Pesquisar"  class="iconPesquisa">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="filters">
+            <div class="filter active" id="Natureza">Natureza</div>
+            <div class="filter" id="Retratos">Retratos</div>
+            <div class="filter" id="Comidas">Comidas</div>
+            <div class="filter" id="Tecnologia">Tecnologia</div>
+        </div>
+        <div class="imgArea">
+            <div class="imgContainer" id="con01">
+            </div>
+            <div class="imgContainer" id="con02">
+            </div>
+            <div class="imgContainer" id="con03">
+            </div>
+        </div>
+
+        <div class="vazio">
+            <img src="../img/empty.jpg" alt="Vazio">
+            <h2>Não foi possível encontrar sua pesquisa.</h2>
+        </div>
+
+        <!-- Mascara para clonagem -->
+        <div class="mask">
+            <div class="divImg">
+                <img class="img" src="" alt="">
+                <div class="imgConteudo">
+                    <div class="imgText">
+                        <p>Nome da Imagem</p>
+                        <button class="downloadButton">Baixar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cOption">
+                <div class="optionData">
+                    <img src="../img/wallpaper02.jpg"  alt="">
+                    <h4>Nome da Coleção</h4> 
+                </div>
+                    <button class="save">Salvar</button>
+            </div>
+        </div>
+    </div>
+
+    </main>
+
+    <script src="../js/functions.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

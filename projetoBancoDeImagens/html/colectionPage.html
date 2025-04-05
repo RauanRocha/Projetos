@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> VisoN </title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/colectionStyle.css">
+</head>
+<body>
+    <header class="cHeader">
+        <div class="headHeader">
+            <div id="logoDiv">
+                <a href="../html/index.html"><img src="../img/logo.png" alt="Logo" id="logo"></a>
+                <p>VisioN</p>
+            </div>
+        </div>
+        <div class="cTitle">
+            <h1> Suas coleções </h1>
+        </div>
+    </header>
+
+
+    <main>   
+
+        <!-- --------------- COLECTION AREA ---------------- -->  
+        <div id="cMain">
+            <div class="addArea">
+                <button class="addCard">Nova Coleção</button>
+            </div>
+            <div class="newColsArea">
+            </div>
+        </div>
+
+        
+        <!-- --------------------MODAIS-------------------- -->
+        <!-- Modal Colection -->
+        <div class="backModal backModalColection">
+            <div class="modal colectionModal">
+                <p class="closeX"><span class="closeColectionModal">x</span></p>
+                <h2 class="colectionName">Colection Name</h2>
+                <div class="imgArea">
+                    <div class="imgContainer" id="con01">
+                    </div>
+                    <div class="imgContainer" id="con02">
+                    </div>
+                    <div class="imgContainer" id="con03">
+                    </div>
+                </div>
+
+                <div class="vazio">
+                    <img src="../img/empty.jpg" alt="Vazio">
+                    <h2>Esta pasta ainda está vazia.</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image Modal -->
+        <div class="backModal backModalImg">
+            <div class="modal modalImg">
+                <p class="closeX closeImgModal"><span>x</span></p>
+                <div class="headerModalImg">
+                    <div class="autorInfo">
+                        <img src="../img/perfilIcon.png" alt="" id="autorIcon">
+                        <p>Nome Fotografo</p>
+                    </div>
+                    <div class="navModalImg">
+                        <button id="modalDownload">Baixar</button>
+                    </div>
+                </div>
+                <h3 id="modalImgDesc">Descrição muito legal da imagem</h3>
+                <img src="../img/wallpaper02.jpg" alt="" id="modalMainImg">
+            </div>
+        </div>
+
+        <!-- Mascara para clonagem -->
+        <div class="mask">
+            <div class="divImg">
+                <img class="img" src="" alt="">
+                <div class="imgConteudo">
+                    <img src="../img/excluir.png" alt="" class="deleteIcon deleteImg">
+                    <div class="imgText">
+                        <p>Nome da Imagem</p>
+                        <button class="downloadButton">Baixar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cCard">
+                <div class="cardImg">
+                    <img src="../img/wallpaper02.jpg" alt="">
+                </div>
+                <div class="cardText">
+                    <h2>Favoritos</h2>
+                    <p>0 Fotos</p>
+                </div>
+                <div class="cHover">
+                    <img class="deleteIcon deleteCol" src="../img/excluir.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/functions.js"></script>
+    <script src="../js/colecScript.js"></script>
+</body>
+</html>

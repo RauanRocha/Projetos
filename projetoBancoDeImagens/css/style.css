@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Montserrat", serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+}
+
+#mHeader{
+    height: 600px;
+    width: 100%;
+    position: relative;
+
+    background-image: url(../img/wallpaper.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.headHeader {
+    width: 100%;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: 0.3s;
+}
+
+.fixedHeader {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    background: rgb(0 0 0 / 73%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+#logoDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+
+    margin-left: 50px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#logoDiv p {
+    font-weight: 600;
+    font-size: larger;
+    color: white;
+}
+
+#navHeader {
+    margin-right: 50px;
+}
+
+#navHeader img{
+    width: 45px;
+    margin: 0px 5px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#navHeader img:hover, #logoDiv:hover, .searchArea:hover, .imgIcons img:hover, button:hover{
+    transform: scale(1.05);
+}
+
+#logo{
+    width: 50px;
+}
+
+.mainHeader{
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+h1 {
+    color: white;
+    max-width: 70%;
+    text-align: center;
+}
+
+.searchArea {
+    width: 30%;
+    height: 35px;
+
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+.iconPesquisa {
+    width: 30px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.search {
+    margin-left: 20px;
+    border: none;
+    outline: none;
+    width: 95%;
+
+    font-size: large;
+    font-weight: 500;
+}
+
+.filters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    width: 100%;
+    font-weight: 600;
+    font-size: larger;
+
+    margin: 100px 0px;
+}
+
+.filter {
+    padding: 5px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 2px solid rgba(37, 37, 37, 0);
+
+    transition: 0.3s;
+}
+
+.filter:hover {
+    border-color: rgb(188, 188, 188);
+}
+
+.active{
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+
+.vazio {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+}
+
+.vazio img {
+    width: 30%;
+}
+
+.imgArea {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+
+    margin-top: 55px;
+}
+
+.imgContainer {
+    margin: 5px;
+    width: 31%;
+
+    position: relative;
+}
+
+.divImg {
+    margin-bottom: 10px;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.imgConteudo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/sombra.png);
+    background-position: bottom center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.imgConteudo:hover {
+    opacity: 1;
+}
+
+.imgIcons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    width: 100%;
+    margin: 20px 20px 0 0;
+}
+
+.imgIcons img {
+    width: 40px;
+    transition: 0.3s;
+}
+
+
+
+.imgText{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: 600;
+    font-size: large;
+
+    color: white;
+    margin: 0px 20px 10px 20px;
+}
+
+.imgText button {
+    border: none;
+    padding: 8px 16px;
+    background-color: rgb(2, 176, 207);
+    border-radius: 16px;
+    color: white;
+    font-weight: 600;
+
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.img:hover {
+    transform: scale(1.1);
+}
+
+.mask {
+    opacity: 0;
+}
+
+.invisible {
+    display: none;
+}
+
+.gigante {
+    height: 10000px;
+}
+
+.backModal {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+
+    background: rgba(0, 0, 0, 0.164);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    transition: 0.1s;
+}
+
+.backModalImg, .backModalSave, .backModalColection {
+    opacity: 0;
+    display: none;
+}
+
+.modal {
+    position: fixed;
+
+    background-color: white;
+    border-radius: 16px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    box-shadow: 2px 2px 11px #00000047;
+
+    padding: 25px;
+}
+
+/* Aba de Salvar */
+
+.modalSave{
+    width: 50%;
+    height: min-content;
+}
+
+.saveColection {
+    width: 100%;
+    height: 100%;
+}
+
+#closeSaveColec {
+    height: 10%;
+}
+
+.closeX {
+    font-size: 30px;
+    font-weight: 700;
+
+    color: gray;
+    width: 100%;
+
+    text-align: end;
+}
+
+.closeImgModal:hover, #closeSaveColec:hover{
+    cursor: pointer;
+}
+
+.saveText {
+    width: 100%;
+}
+
+.saveText h2 {
+    text-align: center;
+    font-weight: 700;
+
+    margin: 5px 0px 40px 0px;
+}
+
+.saveText h3 {
+    font-weight: 600;
+    font-size: large;
+
+    margin:10px 0px;
+    height: 20%;
+}
+
+.noColec{
+    width: 100%;
+    text-align: center;
+}
+
+.noColec a{
+    color: orangered;
+    font-weight: 600;
+}
+
+.colecOptions {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    
+    overflow: auto;
+    height: 400px;
+    margin-top: 20px;
+}
+
+.cOption {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 400px;
+    padding: 10px 20px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.cOption:hover {
+    background-color: rgb(232, 232, 232);
+}
+
+.cOption button{
+    border: none;
+    padding: 8px 16px;
+    background-color: rgb(2, 176, 207);
+    border-radius: 16px;
+    color: white;
+    font-weight: 600;
+
+    transition: 0.3s;
+    cursor: pointer;
+    
+}
+
+.optionData h4 {
+    font-size: large;
+}
+
+.optionData img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+}
+
+.optionData {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Aba Modal Imagem */
+
+.modalImg {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+
+    max-width: 70vw;
+    max-height: 80vh;
+
+    width: 100%; 
+    height: 80%; 
+}
+
+.headerModalImg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+#modalMainImg {
+    max-width: 60%;
+    max-height: 70%;
+
+    object-fit: contain;
+    margin: 50px 0px;
+}
+
+.autorInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#autorIcon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.autorInfo {
+    font-weight: 600;
+    height: 50px;
+}
+
+
+.navModalImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.navModalIcon {
+    width: 40px;
+    opacity: 0.7;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.navModalIcon:hover {
+    transform: scale(1.05);
+}
+
+.navModalImg button {
+    border: none;
+    padding: 8px 16px;
+    background-color: rgb(2, 176, 207);
+    border-radius: 16px;
+    color: white;
+    font-weight: 600;
+
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.modalImg h3 {
+    width: 100%;
+    text-align: start;
+}

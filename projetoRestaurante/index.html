@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Site Restaurante </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Modais -->
+    <div class="compras">
+        <div class="modal">
+            <p class="fechar">x</p>
+            <div class="conteudoModal">
+                <img src="" alt="" class="modal-img">
+                <div class="textoModal">
+                    <h2>Macarrão</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="preco">
+                        <h3>R$ 00,00</h3>
+                        <div class="qt">
+                            <span id="qtMenos">-</span>
+                            <p>1</p>
+                            <span id="qtMais">+</span>
+                        </div>
+                    </div>
+                    <button class="button bModal adicionar">Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="mascara">
+    <!-- Molde Card Comida -->
+        <div class="cardComida">
+            <img src="" alt="macarrao" class="produtoImg">
+            <div class="comidaTexto">
+                <h3>--</h3>
+                <p>--</p>
+            </div>
+            <button class="button p-button">Ver mais</button>
+        </div>
+
+    <!-- Molde Pedidos Carrinho de Compras -->
+        <div class="pedido">
+            <img src="" alt="">
+            <h3>NomeDoPrato</h3>
+            <div class="qt">
+                <span id="qtMenos">-</span>
+                <p>1</p>
+                <span id="qtMais">+</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Molde Pedidos Carrinho de Compras -->
+    <div class="carrinho">
+        <article>
+            <img src="img/empty.png" alt="vazio">
+        </article>
+        <p class="fecharCar fechar">X</p>
+        <h2>Seus <span>Pedidos</span></h2>
+        <div class="pedidos">
+
+        </div>
+        <hr>
+        <div class="precosT subTotal">
+            <h3>Subtotal</h3>
+            <p>R$--</p>
+        </div>
+        <hr>
+        <div class="precosT desconto">
+            <h3>Desconto (-10%)</h3>
+            <p>R$--</p>
+        </div>
+        <hr>
+        <div class="precosT total"> 
+            <h3>Total</h3>
+            <p>R$--</p>
+        </div>
+        <button class="button" id="finalButton">Finalizar Compra</button>
+    </div>
+
+    <!-- Modal Finalização da Compra -->
+    <div class="compras" id="finalBack">
+        <div id="final">
+            <div id="topBar"></div>
+            <h2>Sua compra foi finalizada</h2>
+            <p>Obrigado pela preferencia!!</p>
+        </div>
+    </div>
+
+    <!-- Corpo site -->
+    <header id="header">
+        <img id="logo" src="img/logo.png" alt="LogoRestaurante">
+        <nav id="nav-bar">
+            <a href="#inicial" class="hoverBack">Home</a>
+            <a href="#sobre" class="hoverBack">Sobre</a>
+            <a href="#cardapio" class="hoverBack">Produtos</a>
+            <a href="#entrega" class="hoverBack">Entrega</a>
+        </nav>
+        <nav id="nav-img">
+            <div class="iconeCar">
+                <img src="img/carrinho-de-compras.png" alt="Carrinho de Compras" id="carrinhoImg" class="hoverBack icon">
+                <div class="iconeQt">1</div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="inicial" >
+            
+            <div id="p-info">
+                <div id="p-texto">
+                    <p class="especial">Bem Vindo</p>
+                    <h1 id="h1-desktop"><span>Sabores</span> Autênticos, <br>
+                        Momentos <span>Inesquecíveis</span></h1>
+                    <h1 id="h1-mobile">
+                        <span>Sabores</span> Autênticos,
+                        Momentos <span>Inesquecíveis</span>
+                    </h1>
+                    <p>Desfrute de uma experiência gastronômica que traz o melhor da nossa cozinha diretamente para a sua mesa.</p>
+                    <a href="#produtos"><button class="button">Peça Agora</button></a>
+                </div>
+                <img id="laranja01" src="img/laranja01.png" alt="">
+            </div>
+            
+            <div id="p-img">
+                <img id="img-principal" src="img/prato-principal.png" alt="">
+           
+            </div>
+        </section>
+        <section id="sobre" class="block">
+            <header>
+                <div id="s-titulo">
+                    <img src="img/logo.png" alt="Logo">
+                    <h2>Sobre Nós</h2>
+                </div>
+                <img id="ovo" src="img/ovo.png" alt="ovo">
+            </header>  
+            <article>
+                    <div class="laranja-tl">
+                        <div class="card">
+                            <div class="card-titulo">
+                                <img src="img/icon-servicos.png" alt="serviços">
+                                <h3>Serviço Excepcional</h3>
+                            </div>
+                            <p>Acreditamos que um excelente serviço é fundamental para uma experiência gastronômica de qualidade.  Esforçamo-nos para que cada visita ao nosso restaurante seja marcada pela satisfação e pelo cuidado.</p>
+                        </div>
+                    </div>
+                    <div class="sizeCard">
+                        <div class="card">
+                            <div class="card-titulo">
+                                <img src="img/icon-culinaria.png" alt="Culinária">
+                                <h3>Culinária Autêntica </h3>
+                            </div>
+                            <p>Nos orgulhamos de oferecer uma culinária autêntica que celebra as tradições gastronômicas. Cada prato é preparado com ingredientes frescos e de alta qualidade, garantindo sabores genuínos e deliciosos.</p>
+                        </div>
+                    </div>
+                    <div class="laranja-br">
+                        <div class="card">
+                            <div class="card-titulo">
+                                <img src="img/icon-lar.png" alt="Lar">
+                                <h3>Ambiente Acolhedor</h3>
+                            </div>
+                            <p>Nosso restaurante oferece um ambiente acolhedor e convidativo, perfeito para qualquer ocasião. Com uma decoração charmosa e uma atmosfera relaxante, garantimos que cada visita seja uma experiência agradável e memorável.</p>
+                        </div>
+                    </div>
+            </article>
+            <a href="#contato"><button class="button" id="s-button">Entre em contato</button></a>
+        </section>
+        <section id="cardapio" class="block">
+            <h2>Cardápio</h2>
+            <div id="filtro">
+                <button class="especial active" id="todas">Todas</button>
+                <button class="especial" id="carne">Carnes</button>
+                <button class="especial" id="salada">Saladas</button>
+                <button class="especial" id="mar">Mar</button>
+            </div>
+            <div id="produtos">
+            </div>
+        </section>
+        <section id="entrega" class="block">
+            <div id="e-texto">
+                <h2>Entrega <span>Rapida</span> <br>e <span>Confiavel</span></h2>
+                <p>Aproveite a conveniência do nosso sistema de entrega rápida e confiável, que leva os sabores irresistíveis do diretamente à sua porta. Garantimos que seus pedidos cheguem frescos e no horário combinado, proporcionando a mesma qualidade excepcional que você encontra em nosso salão.</p>
+                <a href="#cardapio"><button class="button">Peça Agora</button></a>
+            </div>
+            <div class="divBike">
+                <img id="bike" src="img/bike.png" alt="bicicleta">
+            </div>
+    </main>
+    <footer id="contato">
+        <img src="img/logoBranco.png" alt="">
+        <div>
+            <a href="https://www.linkedin.com/in/rauan-rocha-2091002bb/" target="_blank"><img src="img/linkedin.png" alt="Linkedin"></a>
+            <a href="https://github.com/RauanRocha" target="_blank"><img src="img/github.png" alt="GitHub"></a>
+            <a href="https://www.instagram.com/rauan.jrs/" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <script src="js/comidas.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

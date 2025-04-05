@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Nunito', serif;
+}
+
+:root {
+    --primaryColor: #8c52ff;
+    --primDark: #612ec8;
+    --secundaryColor: #ff861c;
+    --secLight: #ff9437;
+    --grayColor: #5e5e5e;
+
+    --greenColor: #15f824;
+    --redColor: #f81515;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+/* Header */
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#headHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 20px 0px;
+
+}
+
+    /* Logo Area */
+    .logoArea {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .logoImg {
+        width: 50px;
+    }
+
+    .textLogo {
+        font-family: "Rubik", serif;
+        font-weight: 700;
+        font-size: x-large;
+    }
+
+    #headButtons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .button {
+        background-color: var(--secundaryColor);
+        padding: 8px 30px;
+
+        border-radius: 10px;
+        border: 0px;
+        border-bottom: 4px solid #bc5800;
+
+        font-size: large;
+        font-weight: 700;
+        color: white;
+        
+        cursor: pointer;
+
+    }
+
+    .button:hover {
+        background-color: var(--secLight);
+    }
+
+    .button:active{
+        border-bottom: 0px solid #bc5800;;
+    }
+
+    #relButton {
+        padding: 10px 12px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #relButtonImg {
+        width: 22px;
+    }
+
+#backgroundForm{
+    position: absolute;
+    z-index: -1;
+
+    top: 0;
+    right: 0;
+    width: 45%;
+}
+
+#backgroundForm02{
+    position: absolute;
+    z-index: -1;
+    top: -200px;
+    left: -20%;
+
+    width: 45%;
+}
+
+/* First Section */
+
+#firstSection {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#firstText {
+    width: 45%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+#mainText {
+    font-family: "Rubik", serif;
+    font-weight: 600;
+
+    margin: 20px 0px;
+}
+
+#buttonArea {
+    height: 60px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+#firstImg {
+    width: 45%;
+}
+
+.firstButton {
+    padding: 10px 60px;
+}
+
+/* Main */
+
+main{
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+    margin-top: 125px;
+} 
+
+.mainBack {
+    position: absolute;
+    z-index: -1;
+    width: 30%;
+}
+
+#mainBackground01 {
+    top: 0;
+    right: 0;
+    width: 30%;
+}
+
+#mainBackground02 {
+    left: 0;
+    top: 800px;
+}
+
+    /* LearnSection */
+    #learnSection {
+        background-color: var(--primaryColor);
+        width: 70%;
+
+        border-radius: 15px;
+        border-bottom: 4px solid #6834cf;
+        
+        height: 300px;
+    }
+
+    #learnText {
+        text-align: center;
+        color: white;
+        width: 50%;
+    }
+
+    #learnText h2 {
+        font-family: "Rubik", serif;
+        font-size: x-large;
+        font-weight: 700;
+        
+        margin-bottom: 10px;
+    }
+
+    #learnImg {
+        width: 30%;
+    }
+
+    /* TimeSection */
+    .section{
+        width: 80%;
+        margin: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sectionText {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #temeSection, #diffSection {
+        align-items: center;
+        text-align: left;
+    }
+
+    #temeText, #diffText {
+        align-items: start;
+    }
+
+    #temeSection p, #diffSection {
+        text-align-last: left;
+    }
+
+
+    #timeSection {
+        align-items: center;
+        text-align: right;
+    }
+
+    #timeText {
+        align-items: end;
+    }
+
+    .sectionText h2 {
+        color: var(--primaryColor);
+        font-family: "Rubik", serif;
+        font-weight: 700;
+        font-size: xx-large;
+    }
+
+    .sectionText p {
+        color: var(--grayColor);
+        font-weight: 600;
+        text-align: justify;
+
+        width: 80%;
+    }
+
+    #timeSection p {
+        text-align-last: right;
+    }
+    
+    .sectionImg {
+        width: 40%;
+    }
+
+    /* Result Section */
+
+    #resultSection{
+        width: 100%;
+        height: 700px;
+        
+        background-image: url(../img/backResults.png);
+        background-position: top center;
+        background-size: cover;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+
+    #resultInfo {
+        width: 40%;
+        background-color: transparent;
+        border-radius: 15px;
+        
+        padding: 20px;
+        margin-top: 142px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        text-align: center;
+        color: white;
+    }
+
+    #resultInfo h2 {
+        font-size: 36px;
+        font-weight: 700;
+        font-family: "Rubik", serif;
+    }
+
+    #resultButtonArea {
+        height: 55px;
+        display: flex;
+        align-items: end;
+    }
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 50px;
+
+    background-color: var(--primaryColor);
+}
+
+#allInfoFooter {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+
+    width: 70%;
+}
+
+.infoFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    color: white;
+}
+
+#infoTec, #infoAutor p a {
+    align-items: center;
+}
+#infoAutor{
+    align-items: start;
+}
+#infoContat, #infoContat p a {
+    align-items: end;
+}
+
+.pFooter a {
+    color: white;
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.pFooter a:hover {
+    color: var(--secundaryColor);
+    text-decoration: none;
+}
+
+#textLogoFooter {
+    color: white;
+}

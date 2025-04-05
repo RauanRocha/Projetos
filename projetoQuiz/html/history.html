@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindMaze - History</title>
+    <link rel="shortcut icon" href="../img/iconLogo.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/quiz.css">
+    <link rel="stylesheet" href="../css/history.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="../img/logoWhite.png" alt="Logo" class="historyLogo"></a>
+    </header>
+    <main>
+        <div class="historyTitle">
+            <h1>Your Quizzes</h1>
+        </div>
+        <div class="historyContent">
+        </div>
+        <!-- Mask historyContet Itens -->
+            <div class="historyItem invisible">
+                <div class="historyConfigArea">
+                    <span class="configInfo historyCat">Mathematic</span>
+                    <span class="configInfo historyDiff">Random</span>
+                    <span class="configInfo historyTime">Unlimited</span>
+                </div>
+            
+                <span class="historyData">22/12</span>
+            </div>
+
+            <div class="emptyHistory">
+                <h2>You don't have any quiz yet, shall we create one?
+                </h2>
+                <button class="button startButton">Start</button>
+            </div>
+
+
+        <div class="historyButton">
+            <a href="quiz.html"><button class="button">New Quiz</button></a>
+        </div>
+    </main>
+
+
+
+
+
+
+
+    <div class="backgroundModal">
+        <div class="divReportArea">
+            <span class="closeModal">X</span>
+            <h2 class="reportTitle">Report</h2>
+
+            <div class="reportArea">
+                <p class="bigPct">80%</p>
+                <div class="infoReportArea">
+                    <p class="textReport">Você acertou XX questões de XX</p>
+                    <div class="reportInfoConfig">
+                        <div class="reportConfig" id="reportDiff">Medium</div>
+                        <div class="reportConfig" id="reportCat">Mathematic</div>
+                        <div class="reportConfig" id="reportTime">Unlimited</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="allQuestionArea">
+                <!-- QuestionArea will be here -->
+            </div>
+
+            <div class="questionArea invisible">
+                <div class="questArea">
+                    <div class="numQuest">
+                        --
+                    </div>
+                    <h3 class="questionText reportQuestionText">--</h3>
+                </div>
+            
+                <div class="answerArea">
+                </div>
+
+                <!-- Mask Div -->
+                <div class="answerReport invisible">Question --</div>
+            </div> 
+        </div>
+    </div>
+
+    <script src="../javaScript/object.js"></script>
+    <script src="../javaScript/historyScript.js"></script>
+</body>
+</html>

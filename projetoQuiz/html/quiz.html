@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MindMaze - Quiz </title>
+    <link rel="shortcut icon" href="../img/iconLogo.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/quiz.css">
+</head>
+<body class="purple">
+    <header>
+        <div class="logoArea" id="logoAreaConfig">
+            <img src="../img/logoWhite.png" alt="Logo Site" class="logoImg">
+            <p class="textLogo" id="textLogoFooter">MindMaze</p>
+        </div>
+
+        <div class="logoArea" id="logoAreaQuestion">
+            <img src="../img/iconLogo.png" alt="Logo Site" class="logoImg">
+            <p class="textLogo">MindMaze</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="loadArea">
+            <div class="load"></div>
+        </div>
+
+        <div class="divReportArea">
+
+            <h2 class="reportTitle">Report</h2>
+
+            <div class="reportArea">
+                <p class="bigPct">80%</p>
+                <div class="infoReportArea">
+                    <p class="textReport">Você acertou XX questões de XX</p>
+                    <div class="reportInfoConfig">
+                        <div class="reportConfig" id="reportDiff">Medium</div>
+                        <div class="reportConfig" id="reportCat">Mathematic</div>
+                        <div class="reportConfig" id="reportTime">Unlimited</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="allQuestionArea">
+                <!-- QuestionArea will be here -->
+            </div>
+
+            <div class="questionArea invisible">
+                <div class="questArea">
+                    <div class="numQuest">
+                        --
+                    </div>
+                    <h3 class="questionText reportQuestionText">--</h3>
+                </div>
+            
+                <div class="answerArea">
+                </div>
+
+                <!-- Mask Div -->
+                <div class="answerReport invisible">Question --</div>
+            </div> 
+        </div>
+
+
+        <div class="divQuestionArea">
+            <div class="timeBar">
+                <div class="currentTimeBar"></div>
+            </div>
+
+            <div class="questArea">
+                <div class="numQuest">
+                    01
+                </div>
+                <h3 class="questionText">Otima pergunta sobre um otimo tema em um otimo site, alou alou ?Otima pergunta sobre um otimo tema em um otimo site, alou alou ?Otima pergunta sobre um otimo tema em um otimo site, alou alou ?</h3>
+            </div>
+            <div class="answerArea" id="answerArea">
+                
+            </div>
+            <!-- OriginalClone Answer -->
+            <div class="answer invisible">--</div>
+        </div>
+
+        <div class="allConfigArea">
+            <div class="configArea" id="configDiff">
+                <h2>Escolha a Dificuldade</h2>
+                <div class="configButArea">
+                </div>
+                <!-- Button Mask -->
+                <button class="configButton invisible">--</button>
+            </div>
+    
+            <div class="configArea" id="configTime">
+                <h2>Defina seu Tempo</h2>
+                <div class="configButArea">
+                </div>
+                <!-- Button Mask -->
+                <button class="configButton timeB invisible">--</button>
+            </div>
+    
+            <div class="configArea" id="configCat">
+                <h2>Escolha uma categoria</h2>
+                <div class="searchArea">
+                    <input type="text" name="inputText" id="inputText" placeholder="Procure uma categoria...">
+                    <img src="../img/iconLogo.png" id="searchIcon" alt="" placehol>
+                </div>
+                <div class="configButArea catButtonArea">
+                </div>
+                <!-- Button Mask -->
+                <button class="configButton catB invisible">--</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <button class="button" id="nextButton"> Next </button>
+
+        <div id="finalButtons">
+            <button class="button" id="tryAgainButton"> Try Again </button>
+            <!-- <a href="history.html"><button class="button" id="saveButton"> Save </button></a> -->
+            <button class="button" id="saveButton"> Save </button>
+        </div>
+    </footer>
+    <img src="../img/backgroundForm02.png" id="abstractForm01" class="mainBack" alt="Forma Abstrata">
+    <img src="../img/backgroundForm02.png" id="abstractForm02" class="mainBack" alt="Forma Abstrata">
+
+    <script src="../javaScript/object.js"></script>
+    <script src="../javaScript/quizScript.js"></script>
+</body>
+</html>
